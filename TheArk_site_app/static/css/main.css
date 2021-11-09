@@ -78,7 +78,6 @@ nav ul li {
 
 .nav-container a {
     text-align: center;
-    padding: 0px 10px;
     color: #fff;
 }
 
@@ -88,7 +87,7 @@ nav ul li:hover {
 }
 */
 .nav-container a:hover {
-    color: blue;  
+    color: #fff;  
 }
 
 p.title{
