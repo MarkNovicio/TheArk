@@ -9,10 +9,12 @@
         {% endblock %}
 
         {% load static %}
-        <link href="{% static '../static/scss/all.css' %}" rel="stylesheet" type="text/css" />
+      <!--  <link href="{% static '../static/scss/all.css' %}" rel="stylesheet" type="text/css" />
+            <link href="{% static '../static/css/styles2.css' %}" rel="stylesheet" />
+            <link href="{% static '../static/css/styles.css' %}" rel="stylesheet" />-->
         <link href="{% static '../static/css/main.css' %}" rel="stylesheet" type="text/css" />
-        <link href="{% static '../static/css/styles.css' %}" rel="stylesheet" />
-        <link href="{% static '../static/css/styles2.css' %}" rel="stylesheet" />
+        
+        
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,21 +27,21 @@
        
     </head>
     <body>
+        
         <div class= "home-container">
             <div class= "background-color">
-            <div class ="nav-container">
-                <div class="ark-logo-wrapper">
-                    <p>The</p>
-                    <p>Ark</p>
+                <div class ="header-container">
+                    <div class="ark-logo-wrapper">
+                        <p>The</p>
+                        <p>Ark</p>
+                    </div>
+                    <div class="nav-container">
+                        <a class="btn" href="/home">Home</a>
+                        <a class="btn"  href="/objectives">Objectives</a> 
+                        <a class="btn" href="/contact">Contact</a> 
+                    </div>
+                    
                 </div>
-            <nav>
-                <ul class ="data-container">
-                    <li class="btn">About </li> 
-                    <li class="btn">Objectives</li> 
-                    <li class="btn">Contact</li> 
-                </ul>
-            </nav>
-        </div>
             <div class="home-container-title">
                 <p class="title p-tag">WELCOME</p>
                 <p class="title p-tag">to </p>
