@@ -28,9 +28,7 @@
             <a class = "btn" title="Home" href = "/">Home</a> 
             <a class="btn" title= "About" href="/about">About </a>
             <a class="btn" title="Contact" href="/contact">Contact</a>
-            
-        </div>
-
+          </div>
         </div>
       </div>
   
@@ -52,11 +50,11 @@
         </ul>
         {% endif %}
         {% csrf_token %}
-      <p class="form-name" id="name_error">Name:</p>
-      <input type="text" name="username" placeholder="username"><br>
-      <p class="form-name" id="email_error">Email:</p>
+      <p class="form-name" id="name">Name:</p>
+      <input type="text" name="name" placeholder="username"><br>
+      <p class="form-name" id="email">Email:</p>
       <input type="email" name="email" placeholder="johndoe@gmail.com"><br>
-      <p class="form-name" id="message_error">Message:</p>
+      <p class="form-name" id="message">Message:</p>
       <textarea rows="10" cols="100" name="message" placeholder="Please enter text">
       </textarea>
       <div class="form-group">
