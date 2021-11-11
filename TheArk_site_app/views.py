@@ -5,6 +5,10 @@ def index(request):
     return render(request, "index.html")
 
 def contact(request):
+
+    return render(request, "contact.html")
+
+def submit_mail(request):
     if request.method == "POST":
         message_name = request.POST['name']
         message_email = request.POST['email']
@@ -16,7 +20,6 @@ def contact(request):
             message, # message
             message_email, 
             ['th3arclearningcenter@gmail.com']
-            fail_silently=False
 
         )
-    return render(request, "contact.html")
+    return render(request, "sent_email.html")
