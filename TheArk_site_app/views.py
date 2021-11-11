@@ -12,7 +12,11 @@ def contact(request):
 
         #send an email
         send_mail(
-            name, 
+            message_name, #subject
+            message, # message
+            message_email, 
+            ['th3arclearningcenter@gmail.com']
+            fail_silently=False
 
         )
     return render(request, "contact.html")
