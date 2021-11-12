@@ -19,7 +19,10 @@ def submit_mail(request):
             message_name, #subject
             message, # message
             message_email, 
-            ['th3arclearningcenter@gmail.com']
+            ['th3arclearningcenter@gmail.com'],
 
         )
-    return render(request, "sent_email.html")
+        return render(request, 'sent_email.html', {'message_email'})
+
+    else:
+        return render(request, 'sent_email.html', {})

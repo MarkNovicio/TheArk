@@ -15,12 +15,13 @@
 {% load static %}
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link href="{% static '../static/styles.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static '../static/css/main.css' %}" rel="stylesheet" type="text/css" />
+  <!--<link href="{% static '../static/css/styles.css' %}" rel="stylesheet" type="text/css" />-->
 
 </head>
 
 <body>
-    <div class="body-container">
+    <div class="contact-container">
     <header>
       <div class="contact-header-container">
         <div class="contact-header">
@@ -36,9 +37,9 @@
   
     <div id="container">
 
-<section id="contact-container">
+<section id="contact-form-container">
     <h1 class="title">Send Email</h1>
-    <form action="/submit-mail" name="contact" method="POST" class="contact-form"
+    <form action="/submit_mail" name="contact" method="POST" class="contact-form"
       display="block">
 
       <div class="contact-container">
@@ -64,5 +65,6 @@
     </form>
 
 </section>
+  </div>
   </div>
   </html>
