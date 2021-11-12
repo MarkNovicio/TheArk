@@ -22,7 +22,7 @@ def submit_mail(request):
             ['th3arclearningcenter@gmail.com'],
 
         )
-        return render(request, 'sent_email.html', {'message_email'})
+        return render(request, 'sent_email.html')
 
     else:
         return render(request, 'sent_email.html', {})
