@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.core.mail import EmailMessage
 
 def index(request):
     return render(request, "index.html")
@@ -26,3 +27,8 @@ def submit_mail(request):
 
     else:
         return render(request, 'sent_email.html', {})
+
+def send_Email_With_Attach(request, emailto):
+    message_name = request.POST['name']
+    message_email = request.POST['email']
+    message = request.POST['message']
