@@ -17,5 +17,6 @@ Including another URLconf
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('TheArk_site_app.urls'))
+    path('', include('TheArk_site_app.urls')),
+    path('', TemplateView.as_view(template_name=))
 ]

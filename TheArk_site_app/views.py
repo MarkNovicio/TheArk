@@ -32,3 +32,6 @@ def send_Email_With_Attach(request, emailto):
     message_name = request.POST['name']
     message_email = request.POST['email']
     message = request.POST['message']
+
+    msg = EmailMessage(message_name, message, message_email, ['th3arclearningcenter@gmail.com'])
+    msg.content_subtype
